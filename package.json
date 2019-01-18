@@ -1,6 +1,6 @@
 {
   "name": "alangreene",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alan Greene's business card",
   "main": "bin/card.js",
   "bin": {
