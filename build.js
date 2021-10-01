@@ -25,7 +25,7 @@ const content = (
   label('GitHub', colors.github) + ': ' + link('github.com/', 'AlanGreene', colors.github) + newLine +
   label('LinkedIn', colors.linkedin) + ': ' + link('linkedin.com/in/', 'alangreene', colors.linkedin) + newLine +
   label('npm', colors.npm) + ': ' + link('npmjs.com/~', 'alangreene', colors.npm) + newLine +
-  label('Web', chalk.yellow) + ': ' + link('', 'alangreene.ie', chalk.yellow) + newLine +
+  label('Web', chalk.yellow) + ': ' + link('', 'alangreene.net', chalk.yellow) + newLine +
   label('Pronouns') + ': ' + 'he/him' + newLine + newLine +
   label(' ') + '$ ' + colors.npm('npx') + ' alangreene'
 );
