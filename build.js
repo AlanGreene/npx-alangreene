@@ -1,9 +1,10 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const boxen = require('boxen');
-const chalk = require('chalk');
-const leftPad = require('left-pad');
+import boxen from 'boxen';
+import chalk from 'chalk';
+import leftPad from 'left-pad';
 
 const newLine = '\n';
 const label = (text, color = chalk.white) => color.bold(leftPad(text, 8));
@@ -40,6 +41,7 @@ const output = chalk.white(
   boxen(content, boxenOptions)
 );
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 fs.writeFileSync(
   path.join(__dirname, 'bin/output'),
   output
